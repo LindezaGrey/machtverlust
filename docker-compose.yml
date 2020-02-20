@@ -7,7 +7,8 @@ services:
         context: .
     image: machtverlust:latest
     environment:
-      VIRTUAL_HOST: "*.machtverlust.de"
-      LETSENCRYPT_HOST: "*.machtverlust.de"
-      LETSENCRYPT_EMAIL: andy@zieglercloud.de
+      VIRTUAL_HOST: ".machtverlust.de"
+    #   LETSENCRYPT_HOST: "*.machtverlust.de"
+    #   LETSENCRYPT_EMAIL: andy@zieglercloud.de
     restart: always
+    network_mode: bridge
